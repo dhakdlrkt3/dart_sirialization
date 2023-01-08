@@ -65,24 +65,4 @@ class HistoryLocalDataService extends LocalStorage {
     histories.addAll((json as List<dynamic>).map((e) => History.fromJson(e)));
     return histories;
   }
-
-  // String readFile(String fileName) {
-  //   return super.readFile();
-  // }
-
-  // bool readLocalUserData() {
-  //   final contents = readFile('users.json');
-  //   Logger.log('contents => $contents');
-  //   return true;
-  // }
-
-  // Future<bool> saveUser(User user) async {
-  //   final jsonUser = jsonEncode(user.toJson());
-  //   saveFile('users.json', jsonUser);
-  //   return Future.value(false);
-  // }
-
-  // Future<bool> deleteUser(int userId) async {
-  //   return true;
-  // }
 }
